@@ -1,9 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Stylesheet</title>
-<style>
+
+
+
 /* navbar container */
 .navbar {
     overflow:hidden;
@@ -67,12 +64,11 @@
 .dropdown:hover.dropdown-content{
     display:block;
 }
-</style>
-</head>
-<body>
+table.tb{
+    border-collapse:inherit; width:300px;
+}
+.tb th, .tb td {
+    padding:5px; border:solid 10px #333;   
+}
+.tb th {background-color:purple;}
 
-<h1>This is a heading</h1>
-<p>This is a paragraph.</p>
-
-</body>
-</html>
