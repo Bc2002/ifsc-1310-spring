@@ -29,7 +29,7 @@
     border:none;
     outline:none;
     color:white;
-    padding:14px 16px;
+    padding:15px 16px;
     background-color: inherit;
     font-family: inherit;
     margin: 0; 
@@ -64,11 +64,18 @@
 .dropdown:hover.dropdown-content{
     display:block;
 }
-table.tb{
-    border-collapse:inherit; width:300px;
+/* css for the body */
+body {
+    color:beige;
+	background: black;
+	background-image: radial-gradient(circle at center, white 0%, #222 10%, black 60%);
+	overflow: hidden;
+    font-family: sans-serif;
 }
-.tb th, .tb td {
-    padding:5px; border:solid 10px #333;   
+header{
+background-color: purple;
+color:beige;
+padding:20px;
+font-family: sans-serif;
+text-align:center;
 }
-.tb th {background-color:purple;}
-
