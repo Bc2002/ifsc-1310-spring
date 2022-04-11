@@ -1,6 +1,7 @@
 
 
 
+
 /* navbar container */
 .navbar {
     overflow:hidden;
@@ -66,16 +67,17 @@
 }
 /* css for the body */
 body {
-    color:beige;
-	background: black;
-	background-image: radial-gradient(circle at center, white 0%, #222 10%, black 60%);
-	overflow: hidden;
+    color:white;
     font-family: sans-serif;
+    background-repeat: no-repeat, repeat;
+    background-color:#cccccc;
 }
+/* T|R|B|L */
 header{
-background-color: purple;
-color:beige;
+color:white;
+background-image: url(spacex.jpg); /* this image used */    
 padding:20px;
 font-family: sans-serif;
 text-align:center;
+
 }
