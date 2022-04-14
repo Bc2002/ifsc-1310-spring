@@ -2,8 +2,8 @@
  #53616B 
  #1B2C38 
  #181C1F - Base
- #33536B
- #8EA6B8
+ #36454F
+ #B2BEB5
 */
 
 /* ---------------Box Sizing----------------- */
@@ -28,21 +28,21 @@ html {
   .img-right {
     float: right;
     margin: 10px 0 10px 20px;
-    border: 1px solid #c0c0c0;
+    border: 1px solid #708097;
     padding: 5px;
   }
   
   .img-left {
     float: left;
     margin: 10px 20px 10px 0;
-    border: 1px solid #c0c0c0;
+    border: 1px solid #708097;
     padding: 5px;
   }
   
   .img-center {
     display: block;
     margin: 20px auto;
-    border: 1px solid #c0c0c0;
+    border: 1px solid #708097;
     padding: 5px;
   }
   
@@ -71,7 +71,7 @@ html {
   
   header.primary::before {
     content: "";
-    background-image: url("https://assets.codepen.io/7248/dragon-in-space.jpg");
+    background-image: url("https://snipboard.io/BZ907I.jpg");
     background-size: cover;
     position: absolute;
     top: 0px;
@@ -88,11 +88,12 @@ html {
   }
   
   header.primary h1 a {
-    color: #ffffff;
-    background-image: url("https://assets.codepen.io/7248/logo-2.png");
-    display: block;
-    width: 460px;
+    color: black;
+    background-color: blueviolet;
+    background-image: url(https://snipboard.io/Dj5304.jpg);
     height: 70px;
+    border-style: groove;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 0 auto;
     text-indent: 100%;
     white-space: nowrap;
@@ -100,7 +101,7 @@ html {
   }
   
   header.primary h2 {
-    font-family: "Goldman", cursive;
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 2em;
     /* Shorhand Three Value Top, Left/Right, Bottom*/
     margin: 20px auto 40px;
@@ -139,3 +140,147 @@ html {
   header.primary nav a:active {
     background-color: rgba(51, 83, 107, 0.8);
   }
+  /* -----------content ---------- */
+  section {
+padding:7em 0;
+  }
+  section h2{
+    font-size: 2.3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:gray;
+    text-align: center;
+    background-color: black;
+    border-style: groove;
+  }
+/* -----------Articles ----------- */  
+section#articles{
+  background-color:#181c1f;
+  color:beige;
+  border: #ffffff;
+  border-style: groove;
+  
+}
+section#articles .container{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+flex-wrap: wrap;
+border-bottom: 1px solid #c0c0cc;
+}
+section#articles h2, #content h2{
+  flex:0 0 100%;
+  color:#c0c0cc;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+}
+section#articles h2{
+  color:#c0c0cc;
+  text-shadow: 1px 1px #c0c0cc;
+}
+#articles article.post{
+  width:25%;
+  box-shadow:1 6px 9px rgba(51, 83, 107, 0.8);
+  padding:14px;
+  font-size:0.9rem;
+  border-radius: 12px;
+  background:#c0c0cc
+}
+#articles article.post h2{
+  font-size:1.4em;
+  text-shadow: none;
+}
+#articles article.post h2{
+  box-shadow: rgba(51, 83, 107, 0.8);
+}
+#articles article time,
+#artices article figcaption
+#articles article footer{
+  font-size:0.5em;
+  color:#ffffff;
+  text-transform:uppercase;
+}
+
+#articles .post a:link
+#articls .post a:visited
+{color: #708097
+
+}
+#articles .post figure{
+  margin: 0;
+}
+#articles .post img{
+  border-radius: 8px;
+}
+#articles li{
+  margin-bottom: 25px;
+}
+/* ----------- effects --------- */
+#slideshow{
+  padding:3em 0;
+
+}
+/*----------- Id selector ---------- */
+aside[role="complemntary"]{
+  background-color: #000000;
+  color:whitesmoke;
+  padding:2.3em;
+}
+aside .container{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+aside article.widget{
+  width:35%;
+}
+.widget.ovrview table{
+  font-size: 0.5em;
+border-collapse: collapse;
+}
+.widget.overview table td:nth-child(even)
+{
+  text-align: left;
+}
+aside article a:link,
+aside article a:visited{
+  color:#c0c0cc;
+display: block;
+margin-top: 1em;
+letter-spacing: 1px;
+
+}
+aside article a:hover,
+aside article a:active {
+text-decoration: none;
+}
+/*-------- Footer ---------*/
+footer#colophon{
+  background-color:#708097;
+}
+#colophone h6{
+  padding:25px;
+  margin:0;
+  color:aliceblue;
+  text-align: center;
+  font-size:1rem;
+  text-transform: uppercase;
+}
+#colophon h6:link,
+#colophone h6:visited{
+  color:#c0c0cc;
+}
+/* ----------- media queries ---------- */
+@media screen and (max-width:650px){
+  header.primary nav ul{flex-direction: column;
+    margin: 0 auto;
+    width: 550px;
+}}
+header.primary nav ul li{
+  margin-bottom: 12px;
+  width:410px;
+}
+header.primary nav ul li a{
+  display: block;
+}
+
