@@ -71,7 +71,7 @@ html {
   
   header.primary::before {
     content: "";
-    background-image: url("https://snipboard.io/BZ907I.jpg");
+    background-image: url("https://snipboard.io/41G8Vq.jpg");
     background-size: cover;
     position: absolute;
     top: 0px;
@@ -87,18 +87,8 @@ html {
     position: relative;
   }
   
-  header.primary h1 a {
-    color: black;
-    background-color: blueviolet;
-    background-image: url(https://snipboard.io/Dj5304.jpg);
-    height: 70px;
-    border-style: groove;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    margin: 0 auto;
-    text-indent: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-  }
+  
+  
   
   header.primary h2 {
       font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -106,13 +96,15 @@ html {
     /* Shorhand Three Value Top, Left/Right, Bottom*/
     margin: 20px auto 40px;
     position: relative;
+    color: #708097;
+    text-align: center;
   }
   
   header.primary nav ul {
     position: relative;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 0;
     max-width: 900px;
     margin: 20px auto;
@@ -133,7 +125,7 @@ html {
     padding: 8px 16px;
     border-radius: 10px;
     transition: 0.6s;
-    display: block;
+    display:inline-block;
   }
   
   header.primary nav a:hover,
@@ -158,6 +150,7 @@ section#articles{
   color:beige;
   border: #ffffff;
   border-style: groove;
+  text-align: center;
   
 }
 section#articles .container{
@@ -172,7 +165,9 @@ section#articles h2, #content h2{
   color:#c0c0cc;
   text-align: center;
   font-family: 'Times New Roman', Times, serif;
-  font-size: 20px;
+  font-size: 15px;
+  text-align: center;
+
 }
 section#articles h2{
   color:#c0c0cc;
@@ -180,15 +175,14 @@ section#articles h2{
 }
 #articles article.post{
   width:25%;
-  box-shadow:1 6px 9px rgba(51, 83, 107, 0.8);
-  padding:14px;
+  box-shadow:1 6px 9px gray;
+  padding:20px;
   font-size:0.9rem;
   border-radius: 12px;
-  background:#c0c0cc
+  background-color: #708097;
 }
 #articles article.post h2{
-  font-size:1.4em;
-  text-shadow: none;
+  font-size: 2em;
 }
 #articles article.post h2{
   box-shadow: rgba(51, 83, 107, 0.8);
@@ -215,6 +209,25 @@ section#articles h2{
 #articles li{
   margin-bottom: 25px;
 }
+h3{
+  text-align: center;
+  color: #000000;
+  background-color: #708097;
+  border-radius: 3em;
+  border-style: solid;
+}
+h4{
+  text-align: center;
+  color: #000000;
+  background-color: #708097;
+  border-radius: 3em;
+  border-style: solid;
+}
+
+p{
+  background-color: #708097;
+  border: solid;
+}
 /* ----------- effects --------- */
 #slideshow{
   padding:3em 0;
@@ -240,7 +253,11 @@ border-collapse: collapse;
 }
 .widget.overview table td:nth-child(even)
 {
-  text-align: left;
+  text-align: left;}
+
+table th td{
+  border:3px solid black; 
+  border-collapse: collapse;
 }
 aside article a:link,
 aside article a:visited{
